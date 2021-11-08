@@ -1,56 +1,39 @@
-import React, { Component } from 'react';
-import { View, Text, Pressable} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity} from 'react-native';
 import { styles } from './styles';
  
-class App extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      contador: 0,
-    };
+export default function App(){
 
-    this.decrementar = this.decrementar.bind(this);
+  const [contador, setContador] = useState(0)
 
-    this.incrementar = this.incrementar.bind(this);
+  function incrementar(){
+    setContador(contador + 1)
   }
 
-  decrementar(){
-
-    if (this.state.contador === 0) {
-      this.setState({contador:0})
+  function decrementar(){
+    if (contador === 0) {
+      contador
     } else {
-      this.setState({
-      contador: this.state.contador - 1
-    })
+      setContador(contador - 1)
     }
   }
+  
+  return(
+    <View style={styles.container}>
+      <Text style={styles.titleText}> Contador de Clientes</Text>
+      <TouchableOpacity 
+      onPress={decrementar}
+        style={styles.btn}>
+        <Text style={styles.textBtn}>-</Text>
+      </TouchableOpacity>
 
-  incrementar(){
-    this.setState({
-      contador: this.state.contador + 1
-    })
-  }
-
-  render(){
-    return(
-      <View style={styles.container}>
-        <Text style={styles.titleText}> Contador de Clientes</Text>
-        <Pressable 
-          style={styles.btn} 
-          onPress={ this.decrementar }>
-          <Text style={styles.textBtn}>-</Text>
-        </Pressable>
-
-        <Text style={styles.textContador}> {this.state.contador} </Text>
-        
-        <Pressable 
-        style={styles.btn} 
-        onPress={this.incrementar}>
-          <Text style={styles.textBtn}>+</Text>
-        </Pressable>  
-      </View>
-    );
-  }
+      <Text style={styles.textContador}>{contador}</Text>
+      
+      <TouchableOpacity 
+      onPress={incrementar}
+      style={styles.btn}>
+        <Text style={styles.textBtn}>+</Text>
+      </TouchableOpacity>  
+    </View>
+  );
 }
- 
-export default App;

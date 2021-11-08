@@ -3,14 +3,14 @@ import { Text, View, Image, ScrollView, SafeAreaView, StatusBar  } from 'react-n
 import {styles} from './style'
 
 export default function App(){
-  let img = 'https://lh3.googleusercontent.com/bjWv9e1_npAw29nQ-GHUFk-mEqYoLi5gJtKYe68qtP9jh61kBwym8T4AZft91u4Y7DhGc2ElUtMvukUf4jlQTd2ZMwR2CKMMZH6InUoxXwriqKw14GFC77DUQl3_h870_sWGn-QboH5QPJIMA9Gqo9tbD3R1kyiiqbhT7rFXcM0aNZ66KMt_yn076ftxfZH0OmRhhH2Uo5rI9cgVJ41e3mJVVcgWeQ4b5rvvFYt0MVNcnJZgkFmtkYr07zdE3WuccMTSEwErtzQtArZX0iLppgoU4N-bi2GSZi9eWpDZB1oEDVg5zRQZIWTX7qU77Fy5Y0_DMJQHEikJguPeo3iqS-alLJL5_fXNbivFMUMuIaooLJdT3u49eGQgM9T2Uzcl0LazWZiF2chnRMbLC80vz4POrUBlRvwchAwkPw7is_3o4wAGDwMybmALDBpli1ARNTJ_8-jw6I7Q8zFJgflUq27gzKLwpAEnMeYgjbiF0ooO_9D7CjUX5Gp8TgSrXUiBbQnU_5d-2IObhx2qFp68IamcEHB9bzDL25tY-8hwV7DmaXSTxwd_7S4AEZgynsrBqXMtyKs7OryFUsfriTWepUUm2u0VfqTJHisfyRzf4Ek_HqEOQLPiIeQ9sR8mzagTnl_ux3k2_y5LDkbBYmWPiqn0idCz9plKyHI4FT5ItNOTSB-gh0zvqAoKG35Uqijba21FTribuDd7Mv_gSrHbZbGpKQ=s637-no?authuser=0'  
+  let img = 'https://lh3.googleusercontent.com/R5DhJQbRnQBInLX_b9Wxagjzm_qKvfpMYEoR6kgrlj39mAbly50O-iLp3RBnxxSPxAgWjqgkHrfHug3YGKLeqqhY8jtQO7fJJnVR7wBzUUbEZM6w-VXsm6_REsKPSfj98HBkXpSF1fRqCdf9iSVfzd16klcta2mhL0Q8GnmHFmvTqdT4OjNllZ33FuKnvBUUTL7HMsyX8UDYOzf6MrMAat8qNz-wD6M5ZyOBvOZr0-TLlZElZMow6E26Y7s6Elr0r7yvpNSIeUL11V528AM7HkG9zGkn2jk2RRex5VwI8wSyKmDzNT3tpuJzNmHfJc1YgSKJSZgeco3-IxZxYSGlgj7mUd9hfyqbodBNaxB0cKPt7uZPHezIdkeobEH5RaqETmlo_cUXNHm-Z178O5Pi-CEU4RpSm3BQjzOthRbwbzBZd7qvccujzFkwUJQyEV_l3KXl461QLS6BFp2xuNxQ4vjNbBp84wKMDlWvTQa7xja2mFo5Vjqt7uVcFzfeIoFPpWf7hho2yROuLpwfdfZrmHlzcun5-kTmRyIlVWkPDsWZXMzGzxzEIuc9gZAb8C8vRFKnomsxmlj5Zt8CFd8j-bOBPy4BkNwTa8RepefMFnE6yh9wBArU2ygt1j7J__HAgu08Q7Sd7tNO_VWv0-vmgE3PDL2dXBdbXwHTzAplGPuq_m3JvVwpI7OLZoCOs5iqC-s8psR07BkkWgttPKM8aiTD0g=s637-no?authuser=0'  
   return(
 
     <SafeAreaView style={styles.container}>
     <View style={styles.header}>
       <View style={styles.infoHeader}>
-      <Text style={styles.textHeader}>Weslley H. Santos</Text>
-      <Text style={styles.txtStatus}>Cursando ADS</Text>
+        <Text style={styles.textHeader}>Weslley H. Santos</Text>
+        <Text style={styles.txtStatus}>Cursando ADS</Text>
       </View>
     </View>
      
